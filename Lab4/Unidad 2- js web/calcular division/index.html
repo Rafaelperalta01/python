@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./estilos.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="calculator">
+          <input type="text" class="form-control result" id="resultado" disabled>
+          <div class="buttons">
+            <button class="btn btn-dark" onclick="agregarALaOperacion('7')">7</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('8')">8</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('9')">9</button>   
+            <button class="btn btn-dark" onclick="agregarALaOperacion('4')">4</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('5')">5</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('6')">6</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('1')">1</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('2')">2</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('3')">3</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('-')">-</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('0')">0</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('+')">+</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('.')">.</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('/')">/</button>
+            <button class="btn btn-dark" onclick="agregarALaOperacion('*')">*</button>
+            <button class="btn btn-dark" onclick="calcularResultado()">=</button>
+            <button class="btn btn-dark" onclick="limpiarResultado()">C</button>
+          </div>
+        </div>
+      </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

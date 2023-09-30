@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="brand">
+        <h1>Galeria de imagenes</h1>
+    </div>
+</nav>
+  <div class="galeria">
+    <ul class="miniaturas">
+        <li>
+          <div class="card">
+            <div class="card__content">
+              <img src="Imagenes/Igor.png" alt="Imagen 1">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="card__content">
+              <img src="Imagenes/oveja.png" alt="Imagen 2">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="card__content">
+              <img src="Imagenes/Igor_back.png" alt="Imagen 3">
+            </div>
+          </div>
+        </li>
+        <!-- Agrega más miniaturas según sea necesario -->
+    </ul>
+  </div>
+  <div id="contenedorImagen" class="contenedor-imagen">
+    <span class="cerrar-imagen" onclick="cerrarImagen()"></span>
+    <img id="imagenGrande" src="" alt="">
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

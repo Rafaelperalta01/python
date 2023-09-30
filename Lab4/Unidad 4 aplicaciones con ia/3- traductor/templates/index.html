@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Traductor IA</title>
+</head>
+<body class="bg-dark text-light p-4">
+    <div class="container">
+        <h1 class="text-center mb-4">Traductor IA</h1>
+        <form action="/translate" method="post">
+            <div class="form-group">
+                <label for="texto">Texto:</label>
+                <textarea class="form-control" name="texto" id="texto" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="idioma_origen">Idioma Origen:</label>
+                <input type="text" class="form-control" name="idioma_origen" id="idioma_origen" required>
+            </div>
+            <div class="form-group">
+                <label for="idioma_destino">Idioma Destino:</label>
+                <input type="text" class="form-control" name="idioma_destino" id="idioma_destino" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Traducir</button>
+        </form>
+
+        {% if texto %}
+            <div class="mt-4">
+                <h2>Texto Original ({{ idioma_origen }})</h2>
+                <p>{{ texto }}</p>
+                <h2>Traducción ({{ idioma_destino }})</h2>
+                <p>{{ traduccion }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
